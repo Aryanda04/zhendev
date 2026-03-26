@@ -83,7 +83,7 @@ export default function Home() {
                 <ChevronRight className="w-5 h-5 flex-shrink-0" />
               </a>
               <a
-                href="#"
+                href="mailto:bhellazhen.dev@gmail.com"
                 className="flex justify-center items-center gap-2 px-8 py-4 bg-white border-2 border-zhen-lightest rounded-xl font-bold text-lg text-zhen-dark hover:bg-zhen-lightest/30 transition-all shadow-sm hover:shadow-md hover:-translate-y-1"
               >
                 <Terminal className="w-5 h-5" />
@@ -241,10 +241,13 @@ export default function Home() {
             <p className="text-xl text-zhen-lightest mb-10 relative z-10 max-w-2xl mx-auto font-light">
               Let's collaborate to bring your vision to life. Based in Belitung, serving the world.
             </p>
-            <button className="relative z-10 px-8 py-4 bg-zhen-lightest text-zhen-dark font-bold text-lg rounded-xl hover:bg-white transition-colors shadow-lg flex items-center gap-2 mx-auto">
+            <a 
+              href="mailto:bhellazhen.dev@gmail.com"
+              className="relative z-10 px-8 py-4 bg-zhen-lightest text-zhen-dark font-bold text-lg rounded-xl hover:bg-white transition-colors shadow-lg flex w-fit items-center gap-2 mx-auto"
+            >
               <Mail className="w-5 h-5 text-zhen-default" />
               Contact Us Today
-            </button>
+            </a>
           </motion.div>
         </div>
       </section>
