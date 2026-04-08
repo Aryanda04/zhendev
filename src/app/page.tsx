@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Code2, MonitorPlay, Presentation, Terminal, MapPin, ChevronRight, CheckCircle2, Rocket, Mail, Globe } from "lucide-react";
 
 export default function Home() {
@@ -75,13 +76,13 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
               className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
             >
-              <a
-                href="#specialization"
+              <Link
+                href="/work"
                 className="flex justify-center items-center gap-2 px-8 py-4 bg-zhen-default rounded-xl font-bold text-lg text-white hover:bg-zhen-dark transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
                 Discover Our Work
                 <ChevronRight className="w-5 h-5 flex-shrink-0" />
-              </a>
+              </Link>
               <a
                 href="mailto:bhellazhen.dev@gmail.com"
                 className="flex justify-center items-center gap-2 px-8 py-4 bg-white border-2 border-zhen-lightest rounded-xl font-bold text-lg text-zhen-dark hover:bg-zhen-lightest/30 transition-all shadow-sm hover:shadow-md hover:-translate-y-1"
