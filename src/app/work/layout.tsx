@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://zhendev-nu.vercel.app";
+
 export const metadata: Metadata = {
   title: "Portofolio & Hasil Karya Website | Zhen Dev Tanjungpandan Belitung",
   description:
@@ -18,8 +20,22 @@ export const metadata: Metadata = {
     title: "Portofolio & Hasil Karya Website | Zhen Dev",
     description:
       "Showcase website dan platform digital buatan Zhen Dev di Tanjungpandan, Belitung.",
-    url: "/work",
+    url: `${siteUrl}/work`,
     type: "website",
+    images: [
+      {
+        url: `${siteUrl}/og-image.png`,
+        width: 1200,
+        height: 630,
+        alt: "Portofolio Zhen Dev Software House",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Portofolio & Hasil Karya Website | Zhen Dev",
+    description: "Showcase website dan platform digital buatan Zhen Dev di Tanjungpandan, Belitung.",
+    images: [`${siteUrl}/og-image.png`],
   },
 };
 
