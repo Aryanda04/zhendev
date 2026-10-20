@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "@/components/home/Navbar";
 import HeroSection from "@/components/home/HeroSection";
 import TechStackSection from "@/components/home/TechStackSection";
+import WorkSneakPeekSection from "@/components/home/WorkSneakPeekSection";
 import ExpertiseSection from "@/components/home/ExpertiseSection";
 import ProcessSection from "@/components/home/ProcessSection";
 import WhyUsSection from "@/components/home/WhyUsSection";
@@ -28,6 +29,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <TechStackSection />
+      <WorkSneakPeekSection />
       <AboutSection />
       <ExpertiseSection />
       <ProcessSection />

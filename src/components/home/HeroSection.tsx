@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ChevronRight, Terminal, Code2, MonitorPlay } from "lucide-react";
+import { ChevronRight, Terminal, Code2, MonitorPlay, MessageCircle } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -14,6 +14,16 @@ export default function HeroSection() {
       <div className="z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
         {/* Left Content */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zhen-lightest/60 text-zhen-default text-xs font-bold tracking-widest uppercase mb-4 border border-zhen-light/20"
+          >
+            <Code2 className="w-3.5 h-3.5" />
+            Jasa Pembuatan Website • Tanjungpandan, Belitung
+          </motion.div>
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -27,10 +37,9 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            className="text-xl md:text-2xl text-zhen-dark/80 mb-10 max-w-lg font-light leading-relaxed"
+            className="text-xl md:text-2xl text-slate-600 mb-10 max-w-lg font-normal leading-relaxed"
           >
-            We sculpt raw code into <span className="font-semibold text-zhen-dark">premium digital experiences</span>.
-            Elevate your brand with our world-class website development.
+            Jasa pembuatan website profesional &amp; software house di <span className="font-semibold text-zhen-dark">Tanjungpandan, Belitung</span>. Wujudkan kehadiran digital bisnis Anda dengan desain modern, cepat, dan teroptimasi SEO.
           </motion.p>
 
           <motion.div
@@ -39,18 +48,20 @@ export default function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
           >
-            <Link
-              href="/work"
+            <a
+              href="#work"
               className="flex justify-center items-center gap-2 px-8 py-4 bg-zhen-default rounded-xl font-bold text-lg text-white hover:bg-zhen-dark transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
             >
               Discover Our Work
               <ChevronRight className="w-5 h-5 flex-shrink-0" />
-            </Link>
+            </a>
             <a
-              href="mailto:bhellazhen.dev@gmail.com"
-              className="flex justify-center items-center gap-2 px-8 py-4 bg-white border-2 border-zhen-lightest rounded-xl font-bold text-lg text-zhen-dark hover:bg-zhen-lightest/30 transition-all shadow-sm hover:shadow-md hover:-translate-y-1"
+              href="https://wa.me/6281272374141?text=Halo%20Zhen%20Dev,%20saya%20tertarik%20untuk%20konsultasi%20pembuatan%20website"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex justify-center items-center gap-2 px-8 py-4 bg-white border-2 border-emerald-200 rounded-xl font-bold text-lg text-zhen-dark hover:bg-emerald-50/50 hover:border-emerald-400 transition-all shadow-sm hover:shadow-md hover:-translate-y-1"
             >
-              <Terminal className="w-5 h-5" />
+              <MessageCircle className="w-5 h-5 text-emerald-600 flex-shrink-0" />
               Let's Talk
             </a>
           </motion.div>

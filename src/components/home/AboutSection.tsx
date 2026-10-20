@@ -43,17 +43,12 @@ export default function AboutSection() {
             The Creator Behind <br/>
             <span className="text-zhen-default">Zhen Dev</span>
           </h2>
-          <p className="text-lg text-zhen-dark/80 leading-relaxed mb-6">
-            Halo! Saya adalah talenta independen *(Solo Web Developer)* di balik 
-            <strong> Zhen Dev</strong>. Berawal dari semangat untuk membantu bisnis memiliki pijakan digital, 
-            saya mendedikasikan diri untuk merancang dan membangun website premium dengan fokus pada performa, 
-            estetika, dan pengalaman pengguna (UX).
+          <p className="text-lg text-slate-700 leading-relaxed mb-6 font-normal">
+            Halo! Saya adalah developer independen di balik 
+            <strong> Zhen Dev</strong>, software house yang berbasis di <strong>Tanjungpandan, Belitung</strong>. Berawal dari semangat untuk membantu bisnis, UMKM, dan perorangan memiliki identitas digital profesional, saya mendedikasikan diri untuk menyediakan layanan <strong>jasa pembuatan website</strong> berkualitas tinggi dengan fokus pada performa kilat, estetika premium, dan optimasi SEO lokal.
           </p>
-          <p className="text-lg text-zhen-dark/80 leading-relaxed mb-8">
-            Sebagai developer independen, saya mengerjakan proyek Anda dengan perhatian penuh. 
-            Saya percaya bahwa website bukan sekadar kumpulan kode, melainkan karya seni yang bertugas 
-            mewakili <em>brand</em> Anda di dunia digital. Itulah mengapa setiap desain dan fitur 
-            saya rancang secara personal untuk mencapai visi Anda.
+          <p className="text-lg text-slate-700 leading-relaxed mb-8 font-normal">
+            Mulai dari website profil perusahaan *(company profile)*, toko online *(e-commerce)*, hingga sistem manajemen kustom, setiap proyek dikembangkan secara teliti dan personal agar bisnis Anda mudah ditemukan oleh calon pelanggan di mesin pencari Google.
           </p>
           
 

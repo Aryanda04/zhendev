@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Rocket, Mail } from "lucide-react";
+import { Rocket, Mail, MessageCircle } from "lucide-react";
 
 export default function CTASection() {
   return (
@@ -23,11 +23,13 @@ export default function CTASection() {
             Let's collaborate to bring your vision to life. Based in Belitung, serving the world.
           </p>
           <a
-            href="mailto:bhellazhen.dev@gmail.com"
-            className="relative z-10 px-8 py-4 bg-zhen-lightest text-zhen-dark font-bold text-lg rounded-xl hover:bg-white transition-colors shadow-lg flex w-fit items-center gap-2 mx-auto"
+            href="https://wa.me/6281272374141?text=Halo%20Zhen%20Dev,%20saya%20tertarik%20untuk%20konsultasi%20pembuatan%20website"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative z-10 px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-lg rounded-xl transition-all shadow-lg hover:shadow-xl flex w-fit items-center gap-2 mx-auto"
           >
-            <Mail className="w-5 h-5 text-zhen-default" />
-            Contact Us Today
+            <MessageCircle className="w-5 h-5 text-white" />
+            Chat via WhatsApp (0812-7237-4141)
           </a>
         </motion.div>
       </div>
